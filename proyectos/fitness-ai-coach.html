@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness AI Coach — Proyecto intermodular DAM | Jesús Hernández</title>
+  <meta name="description" content="Aplicación multiplataforma con backend Spring Boot, web Angular, app Android nativa Kotlin e integración de IA para coaching personalizado.">
+  <meta name="author" content="Jesús Hernández">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://jesus-hernandez.es/proyectos/fitness-ai-coach.html">
+  <meta property="og:title" content="Fitness AI Coach — Proyecto intermodular DAM | Jesús Hernández">
+  <meta property="og:description" content="Aplicación multiplataforma con backend Spring Boot, web Angular, app Android nativa Kotlin e integración de IA para coaching personalizado.">
+  <meta property="og:image" content="https://jesus-hernandez.es/assets/og/fitness-ai-coach.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fitness AI Coach — Proyecto intermodular DAM | Jesús Hernández">
+  <meta name="twitter:description" content="Aplicación multiplataforma con backend Spring Boot, web Angular, app Android nativa Kotlin e integración de IA para coaching personalizado.">
+  <meta name="twitter:image" content="https://jesus-hernandez.es/assets/og/fitness-ai-coach.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/project.css">
+  <script>
+    (function () {
+      var savedTheme = localStorage.getItem('theme');
+      document.documentElement.setAttribute('data-theme', savedTheme || 'light');
+    }());
+  </script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav site-nav" aria-label="Principal" data-scrolled="false">
+          <a class="nav-brand" href="/" aria-label="Inicio">JH</a>
+          <div class="nav-actions">
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema"></button>
+            <button class="menu-toggle" type="button" data-menu-toggle aria-controls="nav-menu" aria-expanded="false">
+              <span class="visually-hidden">Abrir menú</span>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+          <div class="nav-menu" id="nav-menu" data-nav-menu>
+            <div class="nav-links">
+              <a class="nav-link" href="/#sobre-mi" data-nav-link>Sobre mí</a>
+              <a class="nav-link" href="/#stack" data-nav-link>Stack</a>
+              <a class="nav-link" href="/#proyectos" data-nav-link>Proyectos</a>
+              <a class="nav-link" href="/#contacto" data-nav-link>Contacto</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container back-link">
+      <a href="/#proyectos">← Volver a proyectos</a>
+    </div>
+
+    <main class="readme-container">
+      <header class="readme-header">
+        <div class="readme-header-top">
+          <span class="readme-filename">
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 1.75h6L13.25 6v8.25H3z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+              <path d="M9 1.75V6h4.25" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+            </svg>
+            README.md
+          </span>
+          <div class="readme-actions">
+            <button disabled aria-hidden="true">Raw</button>
+            <button disabled aria-hidden="true">Copy</button>
+            <button disabled aria-hidden="true">Download</button>
+          </div>
+        </div>
+        <div class="readme-tabs">
+          <button class="tab active">Preview</button>
+          <button class="tab" disabled>Code</button>
+          <button class="tab" disabled>Blame</button>
+        </div>
+      </header>
+
+      <article class="readme-content">
+        <h1 class="readme-h1"><span class="readme-emoji">💪</span> Fitness AI Coach</h1>
+        <img src="/fitness-ai-coach-img.png" alt="Captura del proyecto Fitness AI Coach" class="project-hero">
+        <p class="project-tagline">Aplicación multiplataforma desarrollada como proyecto intermodular de DAM. Backend Spring Boot consumido por una web Angular y una app Android nativa, con integración de IA para planes personalizados.</p>
+
+        <h2 class="readme-h2"><span class="readme-emoji">✨</span> Características</h2>
+        <ul>
+          <li>Backend REST con autenticación y autorización por roles</li>
+          <li>Arquitectura por capas (controller, service, repository, model)</li>
+          <li>Persistencia con JPA/Hibernate sobre PostgreSQL</li>
+          <li>Cliente web SPA en Angular consumiendo la API</li>
+          <li>Cliente móvil Android nativo en Kotlin con Jetpack Compose</li>
+          <li>Integración de IA (Groq con modelos Llama/Mixtral) para generación de planes de entrenamiento</li>
+          <li>Validaciones end-to-end y manejo de errores consistente</li>
+        </ul>
+
+        <h2 class="readme-h2"><span class="readme-emoji">🛠️</span> Stack técnico</h2>
+        <div class="stack-tags">
+          <span>Java</span><span>Spring Boot</span><span>Spring Security</span><span>Spring Data JPA</span><span>Hibernate</span><span>PostgreSQL</span><span>Angular</span><span>TypeScript</span><span>Kotlin</span><span>Android</span><span>Jetpack Compose</span><span>Retrofit</span><span>Groq API</span><span>Docker</span>
+        </div>
+
+        <h2 class="readme-h2"><span class="readme-emoji">🚀</span> Links</h2>
+        <div class="project-links">
+          <a href="https://coach-fitness-ia.vercel.app/" target="_blank" rel="noreferrer" class="link-button primary">🌐 Demo en producción</a>
+          <a href="https://github.com/JesusHernandezP/coach-fitness-ia" target="_blank" rel="noreferrer" class="link-button secondary">💻 Ver código</a>
+        </div>
+
+        <h2 class="readme-h2"><span class="readme-emoji">🧠</span> Decisiones técnicas</h2>
+        <p>Elegí Spring Boot por ser el ecosistema más demandado en backend Java y por su robustez para arquitecturas por capas. Diseñé la API REST como punto único de entrada, lo que me permitió desarrollar dos clientes completamente independientes (web Angular y móvil Android nativo) sin duplicar lógica de negocio. Para la IA usé Groq por su latencia muy baja (clave en UX conversacional) y por permitir modelos open-source como Llama y Mixtral, manteniendo independencia de proveedor.</p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-layout">
+        <p>© <span id="year">2026</span> Jesús Hernández</p>
+        <p>Construido con HTML, CSS y JavaScript</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/js/theme-toggle.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

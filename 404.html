@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Página no encontrada | Jesús Hernández</title>
+  <meta name="description" content="La página que buscas no existe en el portfolio de Jesús Hernández.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <script>
+    (function () {
+      var savedTheme = localStorage.getItem('theme');
+      document.documentElement.setAttribute('data-theme', savedTheme || 'light');
+    }());
+  </script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav site-nav" aria-label="Principal" data-scrolled="false">
+          <a class="nav-brand" href="/" aria-label="Inicio">JH</a>
+          <div class="nav-actions">
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema"></button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container simple-page">
+      <section>
+        <span class="hero-location">ERROR 404</span>
+        <h1 class="hero-title">Página no encontrada</h1>
+        <p class="hero-description">El enlace no existe o ya no está disponible.</p>
+        <a class="btn btn-primary" href="/">Volver al inicio</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-layout">
+        <p>© <span id="year">2026</span> Jesús Hernández</p>
+        <p>Construido con HTML, CSS y JavaScript</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/js/theme-toggle.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

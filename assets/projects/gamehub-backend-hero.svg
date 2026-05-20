@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Hero GameHub Backend</title>
+  <desc id="desc">Hero SVG del proyecto GameHub Backend.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#581C87"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="250" cy="220" r="200" fill="#ffffff" opacity="0.08"/>
+  <circle cx="1365" cy="710" r="280" fill="#ffffff" opacity="0.07"/>
+  <rect x="110" y="110" width="1380" height="680" rx="34" fill="#1b0628" opacity="0.16"/>
+  <text x="160" y="250" fill="#f5eaff" font-family="JetBrains Mono, monospace" font-size="28">API REST con Spring Security</text>
+  <text x="160" y="430" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="108" font-weight="700">GameHub Backend</text>
+  <text x="160" y="520" fill="#faf0ff" font-family="Inter, Arial, sans-serif" font-size="34">JWT, roles, Swagger y arquitectura por capas</text>
+</svg>

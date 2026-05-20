@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asha Kiran — Plataforma educativa | Jesús Hernández</title>
+  <meta name="description" content="Plataforma de aprendizaje de español desarrollada con Next.js y TypeScript durante prácticas profesionales en entorno educativo.">
+  <meta name="author" content="Jesús Hernández">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://jesus-hernandez.es/proyectos/asha-kiran.html">
+  <meta property="og:title" content="Asha Kiran — Plataforma educativa | Jesús Hernández">
+  <meta property="og:description" content="Plataforma de aprendizaje de español desarrollada con Next.js y TypeScript durante prácticas profesionales en entorno educativo.">
+  <meta property="og:image" content="https://jesus-hernandez.es/assets/og/asha-kiran.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Asha Kiran — Plataforma educativa | Jesús Hernández">
+  <meta name="twitter:description" content="Plataforma de aprendizaje de español desarrollada con Next.js y TypeScript durante prácticas profesionales en entorno educativo.">
+  <meta name="twitter:image" content="https://jesus-hernandez.es/assets/og/asha-kiran.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/project.css">
+  <script>
+    (function () {
+      var savedTheme = localStorage.getItem('theme');
+      document.documentElement.setAttribute('data-theme', savedTheme || 'light');
+    }());
+  </script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav site-nav" aria-label="Principal" data-scrolled="false">
+          <a class="nav-brand" href="/" aria-label="Inicio">JH</a>
+          <div class="nav-actions">
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema"></button>
+            <button class="menu-toggle" type="button" data-menu-toggle aria-controls="nav-menu" aria-expanded="false">
+              <span class="visually-hidden">Abrir menú</span>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+          <div class="nav-menu" id="nav-menu" data-nav-menu>
+            <div class="nav-links">
+              <a class="nav-link" href="/#sobre-mi" data-nav-link>Sobre mí</a>
+              <a class="nav-link" href="/#stack" data-nav-link>Stack</a>
+              <a class="nav-link" href="/#proyectos" data-nav-link>Proyectos</a>
+              <a class="nav-link" href="/#contacto" data-nav-link>Contacto</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container back-link">
+      <a href="/#proyectos">← Volver a proyectos</a>
+    </div>
+
+    <main class="readme-container">
+      <header class="readme-header">
+        <div class="readme-header-top">
+          <span class="readme-filename">
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 1.75h6L13.25 6v8.25H3z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+              <path d="M9 1.75V6h4.25" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+            </svg>
+            README.md
+          </span>
+          <div class="readme-actions">
+            <button disabled aria-hidden="true">Raw</button>
+            <button disabled aria-hidden="true">Copy</button>
+            <button disabled aria-hidden="true">Download</button>
+          </div>
+        </div>
+        <div class="readme-tabs">
+          <button class="tab active">Preview</button>
+          <button class="tab" disabled>Code</button>
+          <button class="tab" disabled>Blame</button>
+        </div>
+      </header>
+
+      <article class="readme-content">
+        <h1 class="readme-h1"><span class="readme-emoji">📚</span> Asha Kiran</h1>
+        <img src="/asha-kiran-img.png" alt="Captura del proyecto Asha Kiran" class="project-hero">
+        <p class="project-tagline">Herramienta de aprendizaje de español desarrollada durante prácticas profesionales (FCT) en un entorno educativo real. Mobile-first y optimizada para uso continuo por parte de los usuarios finales.</p>
+
+        <h2 class="readme-h2"><span class="readme-emoji">✨</span> Características</h2>
+        <ul>
+          <li>Diseño mobile-first responsive</li>
+          <li>Optimización de rendimiento para conexiones lentas</li>
+          <li>Estructura de contenidos didácticos por niveles</li>
+          <li>Componentes reutilizables para distintos tipos de ejercicios</li>
+          <li>Despliegue continuo en Netlify</li>
+          <li>Desarrollada con requisitos reales de un cliente educativo</li>
+        </ul>
+
+        <h2 class="readme-h2"><span class="readme-emoji">🛠️</span> Stack técnico</h2>
+        <div class="stack-tags">
+          <span>Next.js</span><span>TypeScript</span><span>React</span><span>Tailwind CSS</span><span>Netlify</span>
+        </div>
+
+        <h2 class="readme-h2"><span class="readme-emoji">🚀</span> Links</h2>
+        <div class="project-links">
+          <a href="https://aprende-con-vinculos.netlify.app" target="_blank" rel="noreferrer" class="link-button primary">🌐 Demo en producción</a>
+          <a href="https://github.com/JesusHernandezP/Asha-Kiran-Herramienta-Espa-ol" target="_blank" rel="noreferrer" class="link-button secondary">💻 Ver código</a>
+        </div>
+
+        <h2 class="readme-h2"><span class="readme-emoji">🧠</span> Decisiones técnicas</h2>
+        <p>Elegí Next.js por su renderizado eficiente y la facilidad para crear una experiencia móvil rápida, requisito clave del cliente. Tailwind me permitió iterar diseño con feedback constante del equipo educativo sin perder consistencia visual. El proyecto fue una primera experiencia desarrollando para un cliente con requisitos reales y revisiones periódicas, no para un enunciado académico.</p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-layout">
+        <p>© <span id="year">2026</span> Jesús Hernández</p>
+        <p>Construido con HTML, CSS y JavaScript</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/js/theme-toggle.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

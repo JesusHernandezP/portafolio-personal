@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>puntoGO — E-commerce en producción | Jesús Hernández</title>
+  <meta name="description" content="E-commerce en producción con Next.js, TypeScript, Supabase, monitorización con Sentry y despliegue continuo en Vercel.">
+  <meta name="author" content="Jesús Hernández">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://jesus-hernandez.es/proyectos/puntogo.html">
+  <meta property="og:title" content="puntoGO — E-commerce en producción | Jesús Hernández">
+  <meta property="og:description" content="E-commerce en producción con Next.js, TypeScript, Supabase, monitorización con Sentry y despliegue continuo en Vercel.">
+  <meta property="og:image" content="https://jesus-hernandez.es/assets/og/puntogo.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="puntoGO — E-commerce en producción | Jesús Hernández">
+  <meta name="twitter:description" content="E-commerce en producción con Next.js, TypeScript, Supabase, monitorización con Sentry y despliegue continuo en Vercel.">
+  <meta name="twitter:image" content="https://jesus-hernandez.es/assets/og/puntogo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/project.css">
+  <script>
+    (function () {
+      var savedTheme = localStorage.getItem('theme');
+      document.documentElement.setAttribute('data-theme', savedTheme || 'light');
+    }());
+  </script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav site-nav" aria-label="Principal" data-scrolled="false">
+          <a class="nav-brand" href="/" aria-label="Inicio">JH</a>
+          <div class="nav-actions">
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema"></button>
+            <button class="menu-toggle" type="button" data-menu-toggle aria-controls="nav-menu" aria-expanded="false">
+              <span class="visually-hidden">Abrir menú</span>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+          <div class="nav-menu" id="nav-menu" data-nav-menu>
+            <div class="nav-links">
+              <a class="nav-link" href="/#sobre-mi" data-nav-link>Sobre mí</a>
+              <a class="nav-link" href="/#stack" data-nav-link>Stack</a>
+              <a class="nav-link" href="/#proyectos" data-nav-link>Proyectos</a>
+              <a class="nav-link" href="/#contacto" data-nav-link>Contacto</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container back-link">
+      <a href="/#proyectos">← Volver a proyectos</a>
+    </div>
+
+    <main class="readme-container">
+      <header class="readme-header">
+        <div class="readme-header-top">
+          <span class="readme-filename">
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 1.75h6L13.25 6v8.25H3z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+              <path d="M9 1.75V6h4.25" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+            </svg>
+            README.md
+          </span>
+          <div class="readme-actions">
+            <button disabled aria-hidden="true">Raw</button>
+            <button disabled aria-hidden="true">Copy</button>
+            <button disabled aria-hidden="true">Download</button>
+          </div>
+        </div>
+        <div class="readme-tabs">
+          <button class="tab active">Preview</button>
+          <button class="tab" disabled>Code</button>
+          <button class="tab" disabled>Blame</button>
+        </div>
+      </header>
+
+      <article class="readme-content">
+        <h1 class="readme-h1"><span class="readme-emoji">🛒</span> puntoGO</h1>
+        <img src="/puntogo-img.png" alt="Captura del proyecto puntoGO" class="project-hero">
+        <p class="project-tagline">E-commerce en producción con dominio propio, monitorización de errores en tiempo real y despliegue continuo. Producto que mantengo y evoluciono yo mismo.</p>
+
+        <h2 class="readme-h2"><span class="readme-emoji">✨</span> Características</h2>
+        <ul>
+          <li>Catálogo de productos con búsqueda y filtros</li>
+          <li>Sistema de checkout funcional con gestión de pedidos</li>
+          <li>Panel administrativo multi-rol (admin, aliados, delivery)</li>
+          <li>Sistema multi-divisa configurable</li>
+          <li>Monitorización de errores en producción con Sentry</li>
+          <li>CI/CD continuo con Vercel y GitHub Actions</li>
+          <li>Gestión de dominio propio y DNS</li>
+        </ul>
+
+        <h2 class="readme-h2"><span class="readme-emoji">🛠️</span> Stack técnico</h2>
+        <div class="stack-tags">
+          <span>Next.js</span><span>TypeScript</span><span>React</span><span>Tailwind CSS</span><span>Supabase</span><span>PostgreSQL</span><span>Vercel</span><span>Sentry</span><span>Cloudflare</span>
+        </div>
+
+        <h2 class="readme-h2"><span class="readme-emoji">🚀</span> Links</h2>
+        <div class="project-links">
+          <a href="https://puntogo.app" target="_blank" rel="noreferrer" class="link-button primary">🌐 Demo en producción</a>
+        </div>
+
+        <h2 class="readme-h2"><span class="readme-emoji">🧠</span> Decisiones técnicas</h2>
+        <p>Elegí Next.js por su sistema de rutas, server components y la integración nativa con Vercel para despliegue continuo. Supabase me dio PostgreSQL gestionada, autenticación y storage en un solo servicio, reduciendo complejidad de infraestructura para un proyecto que mantengo en solitario. Sentry resultó clave: detectar errores de usuarios reales en producción cambia completamente la forma de iterar el producto.</p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-layout">
+        <p>© <span id="year">2026</span> Jesús Hernández</p>
+        <p>Construido con HTML, CSS y JavaScript</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/js/theme-toggle.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

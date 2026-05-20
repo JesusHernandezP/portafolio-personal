@@ -1,0 +1,77 @@
+:root {
+  --primary-dark: #2c3e50;
+  --secondary-dark: #34495e;
+  --accent-warm: #8b7355;
+  --light-grey: #bdc3c7;
+  --off-white: #ecf0f1;
+  --text-dark: #2c2c2c;
+  --white: #ffffff;
+  --shadow-light: rgba(44, 62, 80, 0.1);
+  --shadow-medium: rgba(44, 62, 80, 0.15);
+  --rgb-color-background: 236, 240, 241;
+  --color-selection-text: var(--text-dark);
+  --color-selection-bg: rgba(44, 62, 80, 0.15);
+
+  --bg-primary: var(--off-white);
+  --bg-secondary: var(--white);
+  --bg-elevated: var(--white);
+  --bg-code: #f4f6f7;
+
+  --text-primary: var(--text-dark);
+  --text-secondary: var(--secondary-dark);
+  --text-muted: #6e7b85;
+  --text-link: var(--primary-dark);
+  --text-on-accent: var(--white);
+
+  --border-primary: var(--light-grey);
+  --border-secondary: #d5dbdf;
+
+  --accent: var(--primary-dark);
+  --accent-hover: var(--secondary-dark);
+  --accent-warm: #8b7355;
+
+  --shadow-sm: 0 1px 2px var(--shadow-light);
+  --shadow-md: 0 4px 12px var(--shadow-light);
+  --shadow-lg: 0 12px 32px var(--shadow-medium);
+}
+
+[data-theme="dark"] {
+  --color-background: #151515;
+  --color-middleground: #202020;
+  --color-borderhover: #333;
+  --color-foreground: #383838;
+  --color-buttonhover: #444;
+  --color-text: #ffffff;
+  --color-subtext: #bbbbbb;
+  --rgb-color-text: 255, 255, 255;
+  --rgb-color-shadow-header: 21, 21, 21;
+  --rgb-color-background: 21, 21, 21;
+  --rgb-color-shadow: 15, 15, 15;
+  --color-selection-text: #e2e9f7e6;
+  --color-selection-bg: rgba(44, 62, 80, 0.3);
+  --rgb-glow-1: 44, 62, 80;
+  --rgb-glow-2: 78, 98, 118;
+  --rgb-glow-3: 247, 248, 255;
+
+  --bg-primary: var(--color-background);
+  --bg-secondary: var(--color-middleground);
+  --bg-elevated: var(--color-foreground);
+  --bg-code: var(--color-middleground);
+
+  --text-primary: var(--color-text);
+  --text-secondary: var(--color-subtext);
+  --text-muted: #8a8a8a;
+  --text-link: rgb(var(--rgb-glow-2));
+  --text-on-accent: var(--color-text);
+
+  --border-primary: var(--color-borderhover);
+  --border-secondary: var(--color-foreground);
+
+  --accent: rgb(var(--rgb-glow-1));
+  --accent-hover: rgb(var(--rgb-glow-2));
+  --accent-warm: rgb(var(--rgb-glow-2));
+
+  --shadow-sm: 0 1px 2px rgba(var(--rgb-color-shadow), 0.3);
+  --shadow-md: 0 4px 12px rgba(var(--rgb-color-shadow), 0.4);
+  --shadow-lg: 0 12px 32px rgba(var(--rgb-color-shadow), 0.5);
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Zenith Workspace</title>
+  <desc id="desc">Imagen Open Graph del proyecto Zenith Workspace.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#134E4A"/>
+      <stop offset="100%" stop-color="#14B8A6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="215" cy="480" r="205" fill="#ffffff" opacity="0.08"/>
+  <circle cx="980" cy="125" r="160" fill="#ffffff" opacity="0.08"/>
+  <rect x="80" y="80" width="1040" height="470" rx="28" fill="#082220" opacity="0.16"/>
+  <text x="600" y="292" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="76" font-weight="700" text-anchor="middle">Zenith Workspace</text>
+  <text x="600" y="360" fill="#e9fffb" font-family="JetBrains Mono, monospace" font-size="28" text-anchor="middle">Frontend moderno</text>
+  <text x="80" y="584" fill="#e9fffb" font-family="JetBrains Mono, monospace" font-size="24">jesus-hernandez.es</text>
+</svg>

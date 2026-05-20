@@ -1,0 +1,30 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/proyectos/puntogo",
+      "destination": "/proyectos/puntogo.html"
+    },
+    {
+      "source": "/proyectos/fitness-ai-coach",
+      "destination": "/proyectos/fitness-ai-coach.html"
+    },
+    {
+      "source": "/proyectos/asha-kiran",
+      "destination": "/proyectos/asha-kiran.html"
+    },
+    {
+      "source": "/proyectos/protocolo-estudio",
+      "destination": "/proyectos/protocolo-estudio.html"
+    },
+    {
+      "source": "/proyectos/gamehub-backend",
+      "destination": "/proyectos/gamehub-backend.html"
+    },
+    {
+      "source": "/proyectos/zenith-workspace",
+      "destination": "/proyectos/zenith-workspace.html"
+    }
+  ]
+}

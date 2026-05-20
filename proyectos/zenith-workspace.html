@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zenith Workspace — Frontend moderno | Jesús Hernández</title>
+  <meta name="description" content="Aplicación frontend explorando UI moderna con Next.js, TypeScript y Tailwind CSS.">
+  <meta name="author" content="Jesús Hernández">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://jesus-hernandez.es/proyectos/zenith-workspace.html">
+  <meta property="og:title" content="Zenith Workspace — Frontend moderno | Jesús Hernández">
+  <meta property="og:description" content="Aplicación frontend explorando UI moderna con Next.js, TypeScript y Tailwind CSS.">
+  <meta property="og:image" content="https://jesus-hernandez.es/assets/og/zenith-workspace.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Zenith Workspace — Frontend moderno | Jesús Hernández">
+  <meta name="twitter:description" content="Aplicación frontend explorando UI moderna con Next.js, TypeScript y Tailwind CSS.">
+  <meta name="twitter:image" content="https://jesus-hernandez.es/assets/og/zenith-workspace.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/project.css">
+  <script>
+    (function () {
+      var savedTheme = localStorage.getItem('theme');
+      document.documentElement.setAttribute('data-theme', savedTheme || 'light');
+    }());
+  </script>
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav site-nav" aria-label="Principal" data-scrolled="false">
+          <a class="nav-brand" href="/" aria-label="Inicio">JH</a>
+          <div class="nav-actions">
+            <button class="theme-toggle" type="button" data-theme-toggle aria-label="Cambiar tema"></button>
+            <button class="menu-toggle" type="button" data-menu-toggle aria-controls="nav-menu" aria-expanded="false">
+              <span class="visually-hidden">Abrir menú</span>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+          <div class="nav-menu" id="nav-menu" data-nav-menu>
+            <div class="nav-links">
+              <a class="nav-link" href="/#sobre-mi" data-nav-link>Sobre mí</a>
+              <a class="nav-link" href="/#stack" data-nav-link>Stack</a>
+              <a class="nav-link" href="/#proyectos" data-nav-link>Proyectos</a>
+              <a class="nav-link" href="/#contacto" data-nav-link>Contacto</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container back-link">
+      <a href="/#proyectos">← Volver a proyectos</a>
+    </div>
+
+    <main class="readme-container">
+      <header class="readme-header">
+        <div class="readme-header-top">
+          <span class="readme-filename">
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 1.75h6L13.25 6v8.25H3z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+              <path d="M9 1.75V6h4.25" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+            </svg>
+            README.md
+          </span>
+          <div class="readme-actions">
+            <button disabled aria-hidden="true">Raw</button>
+            <button disabled aria-hidden="true">Copy</button>
+            <button disabled aria-hidden="true">Download</button>
+          </div>
+        </div>
+        <div class="readme-tabs">
+          <button class="tab active">Preview</button>
+          <button class="tab" disabled>Code</button>
+          <button class="tab" disabled>Blame</button>
+        </div>
+      </header>
+
+      <article class="readme-content">
+        <h1 class="readme-h1"><span class="readme-emoji">🚀</span> Zenith Workspace</h1>
+        <img src="/zenith-workspace-img.png" alt="Captura del proyecto Zenith Workspace" class="project-hero">
+        <p class="project-tagline">Aplicación frontend explorando patrones de UI moderna, componentización avanzada y experiencia de usuario fluida con Next.js y TypeScript.</p>
+
+        <h2 class="readme-h2"><span class="readme-emoji">✨</span> Características</h2>
+        <ul>
+          <li>Arquitectura de componentes reutilizables</li>
+          <li>Diseño responsive completo</li>
+          <li>Animaciones e interacciones cuidadas</li>
+          <li>Estructura escalable con TypeScript estricto</li>
+          <li>Despliegue continuo</li>
+        </ul>
+
+        <h2 class="readme-h2"><span class="readme-emoji">🛠️</span> Stack técnico</h2>
+        <div class="stack-tags">
+          <span>Next.js</span><span>TypeScript</span><span>React</span><span>Tailwind CSS</span><span>Vercel</span>
+        </div>
+
+        <h2 class="readme-h2"><span class="readme-emoji">🚀</span> Links</h2>
+        <div class="project-links">
+          <a href="https://github.com/JesusHernandezP/Zenith-Workspace" target="_blank" rel="noreferrer" class="link-button secondary">💻 Ver código</a>
+        </div>
+
+        <h2 class="readme-h2"><span class="readme-emoji">🧠</span> Decisiones técnicas</h2>
+        <p>Zenith fue mi proyecto para profundizar en patrones avanzados de React y TypeScript: componentización con composición, tipado estricto, hooks personalizados. El objetivo no fue el dominio funcional sino la calidad técnica del frontend en sí mismo.</p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-layout">
+        <p>© <span id="year">2026</span> Jesús Hernández</p>
+        <p>Construido con HTML, CSS y JavaScript</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/js/theme-toggle.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
