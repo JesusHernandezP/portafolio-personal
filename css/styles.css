@@ -377,11 +377,11 @@ ul {
 .hero-location {
   display: inline-flex;
   padding: var(--space-1) var(--space-3);
-  border: 1px solid var(--border-primary);
+  border: 1px solid #8b7355;
   border-radius: var(--radius-md);
   font-family: "JetBrains Mono", monospace;
   font-size: var(--font-size-sm);
-  color: var(--text-muted);
+  color: #8b7355;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -477,10 +477,11 @@ ul {
 
 .hero-socials {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, max-content));
   align-items: center;
+  justify-content: start;
   gap: var(--space-3);
-  width: min(100%, 30.5rem);
+  width: auto;
   margin-top: calc(-1 * var(--space-2));
   color: #8b7355;
 }
@@ -489,31 +490,31 @@ ul {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  min-height: 3.5rem;
+  width: 6.5rem;
+  height: 4rem;
+  padding: 0;
   border-radius: var(--radius-md);
   color: #8b7355;
-  border: 1px solid color-mix(in srgb, #8b7355 36%, var(--border-primary));
-  background: color-mix(in srgb, var(--bg-secondary) 92%, transparent);
+  border: 0;
+  background: transparent;
+  box-shadow: none;
   transition:
     transform var(--transition-base),
     color var(--transition-base),
-    background-color var(--transition-base),
-    border-color var(--transition-base),
-    box-shadow var(--transition-base);
+    opacity var(--transition-base);
 }
 
 .hero-social-link svg {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 2.75rem;
+  height: 2.75rem;
 }
 
 .hero-social-link:hover,
 .hero-social-link:focus-visible {
   color: var(--accent);
-  border-color: color-mix(in srgb, var(--accent) 42%, var(--border-primary));
-  background: color-mix(in srgb, var(--bg-code) 90%, transparent);
-  box-shadow: var(--shadow-sm);
+  background: transparent;
+  box-shadow: none;
+  opacity: 0.9;
   transform: translateY(-2px);
 }
 
@@ -929,8 +930,21 @@ ul {
   }
 
   .hero-socials {
-    width: 100%;
+    grid-template-columns: repeat(3, minmax(0, max-content));
+    justify-content: start;
+    width: auto;
     margin-top: 0;
+    gap: var(--space-2);
+  }
+
+  .hero-social-link {
+    width: 6.8rem;
+    height: 4rem;
+  }
+
+  .hero-social-link svg {
+    width: 2.3rem;
+    height: 2.3rem;
   }
 
   .hero-aside {
